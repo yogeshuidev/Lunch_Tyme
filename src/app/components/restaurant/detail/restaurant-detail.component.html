@@ -1,0 +1,19 @@
+<section id="restaurant_detail" [className]="isOpen ? 'panel-opened': 'panel-closed'">
+  <div id="map"></div>
+  <div *ngIf="restaurantDataLoaded">
+    <div class="company-info">
+      <div class="company-title">{{ restaurantName }}</div>
+      <div class="category-type">{{ restaurantCategory }}</div>
+    </div>
+    <div class="contact">
+      <div>
+        <div>{{ restaurantAddress1 }}
+          <br />
+          {{ restaurantAddress2 }} {{ restaurantAddress3 }}
+        </div>
+        <div>{{ restaurantPhoneNo }}</div>
+        <div>{{ restaurantTwitter }}</div>
+      </div>
+    </div>
+  </div>
+</section>

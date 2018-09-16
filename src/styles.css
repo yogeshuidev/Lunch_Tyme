@@ -1,1 +1,193 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'AvenirNext-DemiBold';
+    src: url("assets/fonts/AvenirNext-DemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: 'AvenirNext-Regular';
+    src: url("assets/fonts/AvenirNext-Regular.ttf") format("truetype");
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "AvenirNext-Regular";
+    font-size: 12px;
+    overflow: hidden;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  #app {
+  }
+  .containerRestaurant{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    line-height: 16px;
+    display: flex;
+    width: 100%;
+  }
+   .container > div {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    line-height: 16px;
+    display: flex;
+    width: 100%;
+  }
+  p {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  img {
+    width: 50%;
+  }
+  br {
+    line-height: 13px;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* Header */
+  .header {
+    height: 65px;
+    background: rgb(67,232,149);
+    width: 100%;
+  }
+  .header-item {
+    height:40px;
+    min-width: 25px;
+    padding-top:20px;
+    margin: auto;
+    flex-flow: column;
+    text-align: center;
+    font-family: "AvenirNext-DemiBold";
+  }
+  .top-left {
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  .top-middle {
+    color: white;
+    font-size: 17px;
+  }
+  .top-right {
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  /* Header */
+  
+  /* List block */
+  .list-block {
+    height: 100vh;
+    overflow: scroll;
+    display: block;
+  }
+  .list-block::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* List item */
+  .list-item {
+    height: 180px;
+    display: block;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+  }
+  .list-item .shader-back {
+    background-image:
+      url('assets/images/cellGradientBackground@2x.png');
+    height: 100%;
+    background-size: contain;
+  }
+  .list-item div.company-info {
+    text-align: left;
+    display: block;
+    background: none;
+    position: absolute;
+    bottom: 0;
+    height: initial;
+    padding-bottom: 6px;
+  
+  }
+  /* list item */
+  
+  /* Map */
+  #map {
+    height: 180px;
+    background: rgba(0,0,200,.5);
+  }
+  /* Map */
+  
+  /* Company Info block */
+  .company-info {
+    display: block;
+    height: 60px;
+    background: rgb(52,171,121);
+    padding-left:12px;
+  }
+  .company-title {
+    font-family: "AvenirNext-DemiBold";
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 6px;
+    padding-top: 15px;
+    color: white;
+  }
+  .category-type {
+    font-size: 12px;
+    line-height: 12px;
+    color: white;
+  }
+  /* Company Info block */
+  
+  /* Contact Info block */
+  .contact {
+    margin-top: 16px;
+    padding-left:12px;
+    padding-top: 15px;
+    margin: auto;
+    height: 200px;
+    font-size: 16px;
+    display: block;
+  }
+  .contact div {
+    padding-bottom: 26px;
+    line-height: 15px;
+  }
+  /* Contact Info block */
+  
+  /* Footer */
+  .footer-item {
+    text-align: center;
+    margin: auto;
+    flex-flow: column;
+    color: white;
+    font-size: 10px;
+    padding-top: 6px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    height:50px;
+    width: 100%;
+    background: rgb(42,42,42);
+  }
+  /* Footer */
+  
+  .hidden {
+    display: none;
+  }
+  

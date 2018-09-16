@@ -1,0 +1,57 @@
+#restaurant_detail {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 65px;
+  background-color: rgba(255, 255, 255, 1);
+  max-width: 700px;
+}
+
+.panel-opened {
+  width: 100% !important;
+  transition: width .25s ease-in;
+}
+
+.panel-closed {
+  width: 0 !important;
+  transition: width .25s ease-in;
+}
+
+.company-info {
+  display: block;
+  height: 60px;
+  background: rgb(52,171,121);
+  padding-left:12px;
+}
+
+.company-title {
+  font-family: "AvenirNext-DemiBold";
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 6px;
+  padding-top: 15px;
+  color: white;
+}
+.category-type {
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+}
+.contact {
+  margin-top: 16px;
+  padding-left:12px;
+  padding-top: 15px;
+  margin: auto;
+  height: 200px;
+  font-size: 16px;
+  display: block;
+}
+.contact div {
+  padding-bottom: 26px;
+  line-height: 15px;
+}
+
+#map {
+  height: 180px;
+  background: rgba(0,0,200,.5);
+}
